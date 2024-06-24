@@ -1,0 +1,250 @@
+@inproceedings{bandit,
+author = {Gerogiannis, Gerasimos and Torrellas, Josep},
+title = {Micro-Armed Bandit: Lightweight \& Reusable Reinforcement Learning for Microarchitecture Decision-Making},
+year = {2023},
+isbn = {9798400703294},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3613424.3623780},
+doi = {10.1145/3613424.3623780},
+abstract = {Online Reinforcement Learning (RL) has been adopted as an effective mechanism in various decision-making problems in microarchitecture. Its high adaptability and the ability to learn at runtime are attractive characteristics in microarchitecture settings. However, although hardware RL agents are effective, they suffer from two main problems. First, they have high complexity and storage overhead. This complexity stems from decomposing the environment into a large number of states and then, for each of these states, bookkeeping many action values. Second, many RL agents are engineered for a specific application and are not reusable. In this work, we tackle both of these shortcomings by designing an RL agent that is both lightweight and reusable across different microarchitecture decision-making problems. We find that, in some of these problems, only a small fraction of the action space is useful in a given time window. We refer to this property as temporal homogeneity in the action space. Motivated by this property, we design an RL agent based on Multi-Armed Bandit algorithms, the simplest form of RL. We call our agent Micro-Armed Bandit. We showcase our agent in two use cases: data prefetching and instruction fetch in simultaneous multithreaded (SMT) processors. For prefetching, our agent outperforms non-RL prefetchers Bingo and MLOP by 2.6\% and 2.3\% (geometric mean), respectively, and attains similar performance as the state-of-the-art RL prefetcher Pythia—with the dramatically lower storage requirement of only 100 bytes. For SMT instruction fetch, our agent outperforms the Hill Climbing method by 2.2\% (geometric mean).},
+booktitle = {Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture},
+pages = {698–713},
+numpages = {16},
+keywords = {Simultaneous Multithreading, Reinforcement Learning, Prefetching, Multi-Armed Bandits, Microarchitecture, Machine Learning for Architecture},
+location = {<conf-loc>, <city>Toronto</city>, <state>ON</state>, <country>Canada</country>, </conf-loc>},
+series = {MICRO '23}
+}
+
+
+# very related   
+# Lilo 
+@misc{grand2024lilo,
+      title={LILO: Learning Interpretable Libraries by Compressing and Documenting Code}, 
+      author={Gabriel Grand and Lionel Wong and Matthew Bowers and Theo X. Olausson and Muxin Liu and Joshua B. Tenenbaum and Jacob Andreas},
+      year={2024},
+      eprint={2310.19791},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+# EC2 
+@inproceedings{EC2, author = {Ellis, Kevin and Morales, Lucas and Sabl\'{e}-Meyer, Mathias and Solar-Lezama, Armando and Tenenbaum, Joshua B.}, title = {Library learning for neurally-guided Bayesian program induction}, year = {2018}, publisher = {Curran Associates Inc.}, address = {Red Hook, NY, USA}, abstract = {Successful approaches to program induction require a hand-engineered domain-specific language (DSL), constraining the space of allowed programs and imparting prior knowledge of the domain. We contribute a program induction algorithm called EC2 that learns a DSL while jointly training a neural network to efficiently search for programs in the learned DSL. We use our model to synthesize functions on lists, edit text, and solve symbolic regression problems, showing how the model learns a domain-specific library of program components for expressing solutions to problems in the domain.}, booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems}, pages = {7816–7826}, numpages = {11}, location = {Montr\'{e}al, Canada}, series = {NIPS'18} }
+
+#wake sleep :
+@article{
+wake-sleep,
+author = {Geoffrey E. Hinton  and Peter Dayan  and Brendan J. Frey  and Radford M. Neal },
+title = {The "Wake-Sleep" Algorithm for Unsupervised Neural Networks},
+journal = {Science},
+volume = {268},
+number = {5214},
+pages = {1158-1161},
+year = {1995},
+doi = {10.1126/science.7761831},
+eprint = {https://www.science.org/doi/pdf/10.1126/science.7761831},
+abstract = {An unsupervised learning algorithm for a multilayer network of stochastic neurons is described. Bottom-up "recognition" connections convert the input into representations in successive hidden layers, and top-down "generative" connections reconstruct the representation in one layer from the representation in the layer above. In the "wake" phase, neurons are driven by recognition connections, and generative connections are adapted to increase the probability that they would reconstruct the correct activity vector in the layer below. In the "sleep" phase, neurons are driven by generative connections, and recognition connections are adapted to increase the probability that they would produce the correct activity vector in the layer above.}}
+
+ 
+
+# Dream coder  
+@misc{ellis2020dreamcoder,
+      title={DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning}, 
+      author={Kevin Ellis and Catherine Wong and Maxwell Nye and Mathias Sable-Meyer and Luc Cary and Lucas Morales and Luke Hewitt and Armando Solar-Lezama and Joshua B. Tenenbaum},
+      year={2020},
+      eprint={2006.08381},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+#Babble 
+@article{Cao_2023babble,
+   title={babble: Learning Better Abstractions with E-Graphs and Anti-unification},
+   volume={7},
+   ISSN={2475-1421},
+   url={http://dx.doi.org/10.1145/3571207},
+   DOI={10.1145/3571207},
+   number={POPL},
+   journal={Proceedings of the ACM on Programming Languages},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Cao, David and Kunkel, Rose and Nandi, Chandrakana and Willsey, Max and Tatlock, Zachary and Polikarpova, Nadia},
+   year={2023},
+   month=jan, pages={396–424} }
+
+#Stitch 
+@article{Bowers_2023stitch,
+   title={Top-Down Synthesis for Library Learning},
+   volume={7},
+   ISSN={2475-1421},
+   url={http://dx.doi.org/10.1145/3571234},
+   DOI={10.1145/3571234},
+   number={POPL},
+   journal={Proceedings of the ACM on Programming Languages},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Bowers, Matthew and Olausson, Theo X. and Wong, Lionel and Grand, Gabriel and Tenenbaum, Joshua B. and Ellis, Kevin and Solar-Lezama, Armando},
+   year={2023},
+   month=jan, pages={1182–1213} }
+
+
+#REGAL 
+@misc{stengeleskin2024regal,
+      title={ReGAL: Refactoring Programs to Discover Generalizable Abstractions}, 
+      author={Elias Stengel-Eskin and Archiki Prasad and Mohit Bansal},
+      year={2024},
+      eprint={2401.16467},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+#ShapeCoder 
+@misc{jones2023shapecoder,
+      title={ShapeCoder: Discovering Abstractions for Visual Programs from Unstructured Primitives}, 
+      author={R. Kenny Jones and Paul Guerrero and Niloy J. Mitra and Daniel Ritchie},
+      year={2023},
+      eprint={2305.05661},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR}
+}
+
+#Shapemod 
+@article{Jones_2021,
+   title={ShapeMOD: macro operation discovery for 3D shape programs},
+   volume={40},
+   ISSN={1557-7368},
+   url={http://dx.doi.org/10.1145/3450626.3459821},
+   DOI={10.1145/3450626.3459821},
+   number={4},
+   journal={ACM Transactions on Graphics},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Jones, R. Kenny and Charatan, David and Guerrero, Paul and Mitra, Niloy J. and Ritchie, Daniel},
+   year={2021},
+   month=jul, pages={1–16} }
+
+# Leveraging blabla 
+@misc{wong2022leveraging,
+      title={Leveraging Language to Learn Program Abstractions and Search Heuristics}, 
+      author={Catherine Wong and Kevin Ellis and Joshua B. Tenenbaum and Jacob Andreas},
+      year={2022},
+      eprint={2106.11053},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+# Baysian thing 
+@inproceedings{Bayesian, author = {Liang, Percy and Jordan, Michael I. and Klein, Dan}, title = {Learning programs: a hierarchical Bayesian approach}, year = {2010}, isbn = {9781605589077}, publisher = {Omnipress}, address = {Madison, WI, USA}, abstract = {We are interested in learning programs for multiple related tasks given only a few training examples per task. Since the program for a single task is underdetermined by its data, we introduce a nonparametric hierarchical Bayesian prior over programs which shares statistical strength across multiple tasks. The key challenge is to parametrize this multi-task sharing. For this, we introduce a new representation of programs based on combinatory logic and provide an MCMC algorithm that can perform safe program transformations on this representation to reveal shared inter-program substructures.}, booktitle = {Proceedings of the 27th International Conference on International Conference on Machine Learning}, pages = {639–646}, numpages = {8}, location = {Haifa, Israel}, series = {ICML'10} }
+
+
+
+
+
+# kinda related 
+
+# plygol
+
+@misc{cropper2019playgol,
+      title={Playgol: learning programs through play}, 
+      author={Andrew Cropper},
+      year={2019},
+      eprint={1904.08993},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+# prog by demo
+@article{demo, author = {Patton, Noah and Rahmani, Kia and Missula, Meghana and Biswas, Joydeep and Dillig, I\c{s}\i{}l}, title = {Programming-by-Demonstration for Long-Horizon Robot Tasks}, year = {2024}, issue_date = {January 2024}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, volume = {8}, number = {POPL}, url = {https://doi.org/10.1145/3632860}, doi = {10.1145/3632860}, abstract = {The goal of programmatic Learning from Demonstration (LfD) is to learn a policy in a programming language that can be used to control a robot’s behavior from a set of user demonstrations. This paper presents a new programmatic LfD algorithm that targets long-horizon robot tasks which require synthesizing programs with complex control flow structures, including nested loops with multiple conditionals. Our proposed method first learns a program sketch that captures the target program’s control flow and then completes this sketch using an LLM-guided search procedure that incorporates a novel technique for proving unrealizability of programming-by-demonstration problems. We have implemented our approach in a new tool called PROLEX and present the results of a comprehensive experimental evaluation on 120 benchmarks involving complex tasks and environments. We show that, given a 120 second time limit, PROLEX can find a program consistent with the demonstrations in 80\% of the cases. Furthermore, for 81\% of the tasks for which a solution is returned, PROLEX is able to find the ground truth program with just one demonstration. In comparison, CVC5, a syntax-guided synthesis tool, is only able to solve 25\% of the cases even when given the ground truth program sketch, and an LLM-based approach, GPT-Synth, is unable to solve any of the tasks due to the environment complexity.}, journal = {Proc. ACM Program. Lang.}, month = {jan}, articleno = {18}, numpages = {34}, keywords = {Abstract Interpretation, Learning from Demonstrations, Program Synthesis} }
+
+# refractoring for prog induction
+@article{DBLP:journals/corr/abs-2004-09931refproginduc,
+  author       = {Sebastijan Dumancic and
+                  Andrew Cropper},
+  title        = {Knowledge Refactoring for Program Induction},
+  journal      = {CoRR},
+  volume       = {abs/2004.09931},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2004.09931},
+  eprinttype    = {arXiv},
+  eprint       = {2004.09931},
+  timestamp    = {Tue, 28 Apr 2020 16:10:02 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2004-09931.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+# visual abstraction
+@inproceedings{wang2021learningVisAbst,
+  author = {Wang, Haoliang and Polikarpova, Nadia and Fan, Judith},
+  title = {Learning Part-Based Abstractions for Visual Object Concepts},
+  booktitle = {CogSci 2021},
+  publisher = {Underline Science Inc.},
+  year = {2021},
+  month = {July 27},
+ 
+  doi = {10.48448/n1mc-he93}
+}
+# learning 
+@misc{iyer2019learning,
+      title={Learning Programmatic Idioms for Scalable Semantic Parsing}, 
+      author={Srinivasan Iyer and Alvin Cheung and Luke Zettlemoyer},
+      year={2019},
+      eprint={1904.09086},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{hocquette2024learning,
+      title={Learning logic programs by discovering higher-order abstractions}, 
+      author={Céline Hocquette and Sebastijan Dumančić and Andrew Cropper},
+      year={2024},
+      eprint={2308.08334},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+# Rewriting :
+
+@misc{ganeshan2023improving,
+      title={Improving Unsupervised Visual Program Inference with Code Rewriting Families}, 
+      author={Aditya Ganeshan and R. Kenny Jones and Daniel Ritchie},
+      year={2023},
+      eprint={2309.14972},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@inproceedings{DBLP:conf/sat/NotzliRBNPBT19rewrite,
+  author       = {Andres N{\"{o}}tzli and
+                  Andrew Reynolds and
+                  Haniel Barbosa and
+                  Aina Niemetz and
+                  Mathias Preiner and
+                  Clark W. Barrett and
+                  Cesare Tinelli},
+  editor       = {Mikol{\'{a}}s Janota and
+                  In{\^{e}}s Lynce},
+  title        = {Syntax-Guided Rewrite Rule Enumeration for {SMT} Solvers},
+  booktitle    = {Theory and Applications of Satisfiability Testing - {SAT} 2019 - 22nd
+                  International Conference, {SAT} 2019, Lisbon, Portugal, July 9-12,
+                  2019, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {11628},
+  pages        = {279--297},
+  publisher    = {Springer},
+  year         = {2019},
+  url          = {https://doi.org/10.1007/978-3-030-24258-9\_20},
+  doi          = {10.1007/978-3-030-24258-9\_20},
+  timestamp    = {Tue, 27 Jul 2021 08:54:14 +0200},
+  biburl       = {https://dblp.org/rec/conf/sat/NotzliRBNPBT19.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{brandfonbrener2024verified,
+      title={Verified Multi-Step Synthesis using Large Language Models and Monte Carlo Tree Search}, 
+      author={David Brandfonbrener and Sibi Raja and Tarun Prasad and Chloe Loughridge and Jianang Yang and Simon Henniger and William E. Byrd and Robert Zinkov and Nada Amin},
+      year={2024},
+      eprint={2402.08147},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+
+@misc{py150,
+  title = {{Python 150k Dataset}},
+  howpublished = {\url{https://www.sri.inf.ethz.ch/py150}},
+  note = {Accessed: Insert Date}
+}
